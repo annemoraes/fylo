@@ -23,10 +23,24 @@ export const IntroTitle = styled.text`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
   color: #FFF;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 700;
+`;
+
+export const SubtitleContainer = styled.div`
+  width: 100%;
+  margin-top: 30px;
+`;
+
+export const IntroSubtitle = styled.text`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 `;

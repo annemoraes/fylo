@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../../components/Header';
-import { Container, IntroContainer, IntroTitle } from './styles';
+import { Container, IntroContainer, IntroTitle, SubtitleContainer ,IntroSubtitle } from './styles';
 
 import ImageIntro from '../../assets/illustration-intro.png';
 
@@ -17,6 +17,18 @@ const Landing: React.FC = () => {
         <IntroTitle>
           accessible anywhere.
         </IntroTitle>
+        <SubtitleContainer>
+          <IntroSubtitle>          
+            Fylo stores all your most important files in one secure location.
+          </ IntroSubtitle>   
+          <IntroSubtitle>
+            Access them wherever you need, share and collaborate with
+          </IntroSubtitle> 
+          <IntroSubtitle>
+            friends damily, and co-workers. 
+          </IntroSubtitle>
+        </SubtitleContainer>
+        
       </IntroContainer>
     </Container>
   );
