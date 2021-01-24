@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import Button from '../../components/Button';
 import { Container, IntroContainer, IntroTitle, SubtitleContainer ,IntroSubtitle } from './styles';
 
 import ImageIntro from '../../assets/illustration-intro.png';
@@ -28,7 +29,7 @@ const Landing: React.FC = () => {
             friends damily, and co-workers. 
           </IntroSubtitle>
         </SubtitleContainer>
-        
+        <Button>Get Started</Button>
       </IntroContainer>
     </Container>
   );
