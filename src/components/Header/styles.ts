@@ -23,6 +23,7 @@ export const Content = styled.div`
     color: #FFF;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
   }
 
   a:hover {
