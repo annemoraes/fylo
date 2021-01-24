@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from '../../components/Header';
 
 const Landing: React.FC = () => {
-  return <div />;
+  return(
+    <Header />
+  );
 }
 
 export default Landing;
