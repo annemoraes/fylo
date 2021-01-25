@@ -17,7 +17,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center; 
   justify-content: space-between;
-  padding-right: 40px;
+  padding-right: 50px;
   
   a {
     color: #FFF;

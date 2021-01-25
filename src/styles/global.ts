@@ -8,9 +8,13 @@ export default createGlobalStyle`
     outline: 0;
   }
   body {
-    background: hsl(218, 28%, 13%);
+    background: hsl(217, 28%, 15%);
     color: #FFF;
     -webkit-font-smoothing: antialiased;
+  }
+
+  strong, p {
+    font-family: 'Raleway', sans-serif;
   }
 
   button {

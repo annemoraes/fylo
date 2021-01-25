@@ -8,11 +8,12 @@ export const Container = styled.button`
   padding: 0 14px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
-  width: 200px;
+  width: 240px;
   font-size: 14px;
   font-weight: 700;
   margin-top: 16px;
   transition: background-color 0.2s;
+  z-index: 10;
   &:hover {
     background: hsl(176, 68%, 64%);
   }
