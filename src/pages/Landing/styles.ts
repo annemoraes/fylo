@@ -111,3 +111,16 @@ export const ProductiveText = styled.div`
     padding-top: 5px;
   }
 `;
+
+export const CardContainer = styled.div`
+  display: flex;
+  width: 100%;
+  background: hsl(218, 28%, 13%);
+
+`;
+
+export const Card = styled.div`
+  background: hsl(217, 28%, 15%);
+  display: flex;
+  flex-direction: column;
+`;
