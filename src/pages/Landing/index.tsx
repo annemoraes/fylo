@@ -10,7 +10,9 @@ import {
   IntroSubtitle, 
   CurvyImage,
   InfoContainer,
-  InfoContent
+  InfoContent,
+  ProductiveContainer,
+  ProductiveText
 } from './styles';
 
 import ImageIntro from '../../assets/illustration-intro.png';
@@ -19,6 +21,7 @@ import FileIcon from '../../assets/icon-any-file.svg';
 import SecurityIcon from '../../assets/icon-security.svg';
 import CollaborationIcon from '../../assets/icon-collaboration.svg';
 import AccessIcon from '../../assets/icon-access-anywhere.svg';
+import ProductiveIcon from '../../assets/illustration-stay-productive.png';
 
 const Landing: React.FC = () => {
   return(
@@ -50,7 +53,7 @@ const Landing: React.FC = () => {
       </IntroContainer>
 
       <InfoContainer>
-      <InfoContent>
+       <InfoContent>
           <img src={AccessIcon} alt=""/>
           <strong>Access your files, anywhere</strong>
           <p>The ability to use a smartphone, tablet, or computer</p>
@@ -75,6 +78,20 @@ const Landing: React.FC = () => {
           <p>types to be securely stored and shared.</p>
         </InfoContent>
       </InfoContainer>
+
+      <ProductiveContainer>
+        <img src={ProductiveIcon} alt=""/>
+        <ProductiveText>
+          <strong>Stay productive,</strong>
+          <strong>wherever you are</strong>
+          <p>Never let location be an issue when accessing your files. Fylo has you</p>
+          <p>covered for all of your storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for</p>
+          <p>collaboration. No email attachments required. </p>
+          <p>See how Fylo works</p>
+        </ProductiveText>
+      </ProductiveContainer>
+
     </Container>
   );
 }

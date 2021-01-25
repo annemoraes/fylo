@@ -79,11 +79,35 @@ export const InfoContent = styled.div`
   }
 
   strong {
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
   }
 
   p {
     font-size: 14px;
+  }
+`;
+
+export const ProductiveContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(218, 28%, 13%);
+  padding-top: 60px;
+  padding-bottom: 30px;
+`;
+
+export const ProductiveText = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  strong {
+    font-size: 40px;
+    padding-left: 60px;
+  }
+
+  p {
+    padding-left: 60px;
+    padding-top: 5px;
   }
 `;
