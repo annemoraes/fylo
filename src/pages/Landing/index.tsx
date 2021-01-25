@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../../components/Header';
 import Button from '../../components/Button';
+import Input from '../../components/Input';
 import { 
   Container, 
   IntroContainer, 
@@ -14,7 +15,10 @@ import {
   ProductiveContainer,
   ProductiveText,
   CardContainer,
-  Card
+  Card,
+  Footer,
+  FooterCard,
+  FooterCardEmail
 } from './styles';
 
 import ImageIntro from '../../assets/illustration-intro.png';
@@ -27,6 +31,7 @@ import ProductiveIcon from '../../assets/illustration-stay-productive.png';
 import ProfileIcon from '../../assets/profile-1.jpg'; 
 import ProfileIconTwo from '../../assets/profile-2.jpg'; 
 import ProfileIconThree from '../../assets/profile-3.jpg'; 
+import QuotesImage from '../../assets/bg-quotes.png';
 
 const Landing: React.FC = () => {
   return(
@@ -102,7 +107,6 @@ const Landing: React.FC = () => {
           <a href="#">See how Fylo works</a>
         </ProductiveText>
       </ProductiveContainer>
-
       <CardContainer>
         <Card>
           <p>Fylo has improved our team productivity by</p>
@@ -140,7 +144,19 @@ const Landing: React.FC = () => {
           </div>
           
         </Card>
+      
       </CardContainer>
+      <Footer>
+        <FooterCard>
+          <strong>Get early access today</strong>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any</p>
+          <p>questions, our support team would be happy to help you. </p>
+          <FooterCardEmail>
+            <Input name="email" />
+            <Button>Get Started for Free</Button>
+          </FooterCardEmail>
+        </FooterCard>
+      </Footer>
     </Container>
   );
 }

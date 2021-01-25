@@ -147,6 +147,7 @@ export const Card = styled.div`
   align-items: center;
   height: 200px;
   border-radius: 5px;
+  z-index: 10;
 
   p {
     padding-left: 30px;
@@ -171,4 +172,36 @@ export const Card = styled.div`
   span {
     padding-left: 10px;
   }
+`;
+
+export const Footer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  background: hsl(216, 53%, 9%);
+`;
+
+export const FooterCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(219, 30%, 18%);
+  width: 70vw;
+  height: 250px;
+  border-radius: 8px;
+  margin-top: -125px;
+
+  strong {
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+`;
+
+export const FooterCardEmail = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 15px;
 `;
