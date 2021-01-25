@@ -12,7 +12,9 @@ import {
   InfoContainer,
   InfoContent,
   ProductiveContainer,
-  ProductiveText
+  ProductiveText,
+  CardContainer,
+  Card
 } from './styles';
 
 import ImageIntro from '../../assets/illustration-intro.png';
@@ -22,6 +24,9 @@ import SecurityIcon from '../../assets/icon-security.svg';
 import CollaborationIcon from '../../assets/icon-collaboration.svg';
 import AccessIcon from '../../assets/icon-access-anywhere.svg';
 import ProductiveIcon from '../../assets/illustration-stay-productive.png';
+import ProfileIcon from '../../assets/profile-1.jpg'; 
+import ProfileIconTwo from '../../assets/profile-2.jpg'; 
+import ProfileIconThree from '../../assets/profile-3.jpg'; 
 
 const Landing: React.FC = () => {
   return(
@@ -82,16 +87,60 @@ const Landing: React.FC = () => {
       <ProductiveContainer>
         <img src={ProductiveIcon} alt=""/>
         <ProductiveText>
-          <strong>Stay productive,</strong>
-          <strong>wherever you are</strong>
-          <p>Never let location be an issue when accessing your files. Fylo has you</p>
-          <p>covered for all of your storage needs.</p>
-          <p>Securely share files and folders with friends, family and colleagues for</p>
-          <p>collaboration. No email attachments required. </p>
-          <p>See how Fylo works</p>
+          <div>
+            <strong>Stay productive,</strong>
+            <strong>wherever you are</strong>
+          </div>
+          <div>
+            <p>Never let location be an issue when accessing your files. Fylo has you</p>
+            <p>covered for all of your storage needs.</p>
+          </div>
+          <div>
+            <p>Securely share files and folders with friends, family and colleagues for</p>
+            <p>collaboration. No email attachments required. </p>
+          </div>
+          <a href="#">See how Fylo works</a>
         </ProductiveText>
       </ProductiveContainer>
 
+      <CardContainer>
+        <Card>
+          <p>Fylo has improved our team productivity by</p>
+          <p>an order of magnitude. Since making the</p>
+          <p>switch our team has become a well-oiled</p>
+          <p>collaboration machine.</p>
+
+          <div>
+            <img src={ProfileIcon} alt=""/>
+            <span>Satish Patel <br/> Founder and CEO</span>
+          </div>
+          
+        </Card>
+        <Card>
+          <p>Fylo has improved our team productivity by</p>
+          <p>an order of magnitude. Since making the</p>
+          <p>switch our team has become a well-oiled</p>
+          <p>collaboration machine.</p>
+
+          <div>
+            <img src={ProfileIconTwo} alt=""/>
+            <span>Satish Patel <br/> Founder and CEO</span>
+          </div>
+          
+        </Card>
+        <Card>
+          <p>Fylo has improved our team productivity by</p>
+          <p>an order of magnitude. Since making the</p>
+          <p>switch our team has become a well-oiled</p>
+          <p>collaboration machine.</p>
+
+          <div>
+            <img src={ProfileIconThree} alt=""/>
+            <span>Satish Patel <br/> Founder and CEO</span>
+          </div>
+          
+        </Card>
+      </CardContainer>
     </Container>
   );
 }

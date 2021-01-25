@@ -13,7 +13,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  strong, p {
+  strong, p, a, span {
     font-family: 'Raleway', sans-serif;
   }
 

@@ -100,6 +100,7 @@ export const ProductiveContainer = styled.div`
 export const ProductiveText = styled.div`
   display: flex;
   flex-direction: column;
+  color: #FFF;
   
   strong {
     font-size: 40px;
@@ -110,17 +111,64 @@ export const ProductiveText = styled.div`
     padding-left: 60px;
     padding-top: 5px;
   }
+
+  div {
+    padding-bottom: 13px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    padding-left: 60px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  a:hover {
+      text-decoration: underline;
+    }
 `;
 
 export const CardContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 800px;
   background: hsl(218, 28%, 13%);
-
+  justify-content: space-around;
+  align-items: center;
 `;
 
 export const Card = styled.div`
   background: hsl(217, 28%, 15%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 5px;
+
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+  }
+
+  span {
+    padding-left: 10px;
+  }
 `;
